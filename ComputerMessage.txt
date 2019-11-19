@@ -1,5 +1,5 @@
 编号	系统		日期		星期	时间	学生
-1	Windows7	20190610	Monday	10:20	B1
+1	Windows7
 2	Windows7
 3	Windows7
 4	Windows7

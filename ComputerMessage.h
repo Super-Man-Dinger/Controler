@@ -28,7 +28,6 @@ typedef struct time {
 	string minute;
 	string timeString;
 }Time;
-void setComputerMessage();
 class Computer {
 public:
 	Computer();
@@ -61,6 +60,12 @@ public:
 	}
 	string getStudentName() {
 		return _studentName;
+	}
+	Date getDate() {
+		return _date;
+	}
+	Time getTime() {
+		return _time;
 	}
 private:
 	Date _date;

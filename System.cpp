@@ -248,7 +248,7 @@ string System::inputPassWords() {
 		if (i > 20) {
 			break;
 		}
-		cout << "*";
+		cout << "*";													//此处密码无法删除，要改
 		passWords.push_back(ch);
 		i++;
 	}
