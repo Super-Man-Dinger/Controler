@@ -237,9 +237,13 @@ string System::inputPassWords() {
 	char ch;
 	string passWords;
 	while (1) {
+		int size = 0;
 		ch = _getch();
 		if (ch == 8) {
 			i--;
+			cout << "\b \b";
+			size = passWords.length();
+			passWords.erase(size - 1, 1);
 			continue;
 		}
 		if (ch == '\r') {
@@ -248,7 +252,7 @@ string System::inputPassWords() {
 		if (i > 20) {
 			break;
 		}
-		cout << "*";													//此处密码无法删除，要改
+		cout << "*";													
 		passWords.push_back(ch);
 		i++;
 	}
